@@ -1,31 +1,38 @@
+/*
+ * البرنامج: ترتيب الأعداد باستخدام خوارزمية الفقاعات (Bubble Sort)
+ * الوصف: يقوم هذا البرنامج بترتيب مصفوفة من الأعداد تصاعديًا
+ *       عن طريق مقارنة كل عنصر بالعنصر الذي يليه وتبديلهما إذا كان الترتيب غير صحيح.
+ * اللغة: Java
+ * الكاتب: كريم
+ */
+
+
 package BubbleSort;
+
+import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] ages) {
-        // استدعاء الدالة التي تنفذ خوارزمية الفرز الفقاعي
-        Bubbl();
+      int [] array ={1,8,6,4,3,7,0};
+        System.out.printf(Arrays.toString(Bubble(array)));
+
     }
 
-    static void Bubbl() {
-        int temp; // متغير مؤقت لتبديل القيم أثناء الفرز
-        int[] numbers = {5, 7, 2, 3, 9, 10, 20, 0}; // مصفوفة الأرقام التي سيتم فرزها
+    static int[] Bubble(int []arr) {
+        int temp;
 
-        // الحلقة الأولى للتحكم بعدد التكرارات اللازمة لفرز كل العناصر
-        for (int i = 0; i < numbers.length; i++) { // تم تعديل i < numbers.length + i الى i < numbers.length
-            // الحلقة الثانية لمقارنة العناصر المجاورة وتبديلها إذا كانت غير مرتبة
-            for (int j = 0; j < numbers.length - i - 1; j++) {
-                if (numbers[j] > numbers[j + 1]) { // إذا العنصر الحالي أكبر من التالي
-                    // تبديل العناصر
-                    temp = numbers[j];
-                    numbers[j] = numbers[j + 1];
-                    numbers[j + 1] = temp;
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
 
-        // طباعة المصفوفة بعد الفرز
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
-        }
+
+        return arr;
     }
 }
