@@ -67,9 +67,81 @@
 //        }
 //    }
 //}
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+//public class Name {
+//    int id;
+//    String name;
+//    Double gpa;
+//    static String uni;
+//    static  String unAD;
+//    Name(){
+//      this.id=2320936;
+//      this.name ="kareem";
+//      this.gpa =3.5;
+//      this.uni="Borg";
+//      this.unAD="Alex";
+//    }
+//    Name(int ID,String Names,Double GPA,String Uni,String UnAD){
+//        id=ID;
+//        name=Names;
+//        gpa=GPA;
+//        uni=Uni;
+//        unAD=UnAD;
+//    }
+//    public int gets_id(){
+//        return id;
+//    } public void sets(int Id){
+//         id = Id;
+//    }
+//    public String gets_name(){
+//        return name;
+//    }public void sets_name(String name1){
+//         name=name1;
+//    }public Double gets_gpa() {
+//        return  gpa;
+//    }public void sets_gpa(Double gpa1) {
+//          gpa=gpa1;
+//    }
+//    static void infrUN(){
+//        System.out.println("uin ="+uni + "uinAD=" + unAD);
+//    }
+//    public  void  infoSt(){
+//        System.out.println("iD="+id+"Name="+name+"gpa="+gpa);
+//    }
+//
+//    public static void main(String[] args) {
+//        Name kareem = new Name();
+//        kareem.infoSt();
+//        Name.infrUN();
+//
+//        Name kareem1 = new Name(22, "kareem0", 3.5, "BORG", "alex");
+//        kareem1.infoSt();
+//        Name.infrUN();
+//
+//        kareem1.sets(15);
+//        System.out.println(kareem1.gets_id());
+//        kareem1.sets_name("Ahmad");
+//        System.out.println(kareem1.gets_name());
+//        kareem1.sets_gpa(5.8);
+//        System.out.println(kareem1.gets_gpa());
+//        String[] k = {"kareem"};
+//    }
+//
+//}
+
+
+public final class Name {
+
+
+    public static void main(String[] args) {
 
 
 
+    }
+}
 
 
 
