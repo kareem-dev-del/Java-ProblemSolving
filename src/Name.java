@@ -132,16 +132,20 @@ import java.util.Scanner;
 //
 //}
 
-
-public final class Name {
-
-
+import java.util.ArrayList;
+public class Name {
     public static void main(String[] args) {
-
-
-
+        ArrayList<String> cars = new ArrayList<String>();
+        cars.add("Mazda");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("Mazda");
+        System.out.println(cars);
+        cars.remove("Mazda");
+        System.out.println(cars);
     }
 }
+
 
 
 
